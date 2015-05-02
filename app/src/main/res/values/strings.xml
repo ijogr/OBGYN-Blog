@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OBGYN Blog</string>
+
+    <string name="hello_world">Obstetrics and Gynecology Evidence-Based Medicine </string>
+    <string name="action_settings">Settings</string>
+	 <string name="title_activity_splash">Splash</string>
+</resources>

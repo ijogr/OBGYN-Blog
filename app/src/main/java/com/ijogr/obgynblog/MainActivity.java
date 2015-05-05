@@ -1,6 +1,6 @@
 package com.ijogr.obgynblog;
 
-import android.app.ActionBar;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
 
     private WebView mWebView;
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class MainActivity extends Activity {
             public void onPageFinished(WebView view, String url) {
                 //hide loading image
                 findViewById(R.id.imageLoading1).setVisibility(View.GONE);
-                //show webview
+                //show WebView
                 findViewById(R.id.activity_main_webview).setVisibility(View.VISIBLE);
             }});
     }
@@ -64,5 +65,5 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-	
-    }
+
+}
